@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      padding: 100px;
+    }
+    article {
+      border: solid 5px blueviolet;
+      width: 1200px;
+      height: 1000px;
+      padding: 30px;
+      display: flex;
+      /* flex-direction: column;
+      flex-wrap: wrap; */
+      flex-flow: column;
+      /* 主轴结束处开始 */
+      /* justify-content: flex-end; */
+      /* justify-content: space-between; */
+      /* justify-content: space-around; */
+      /* justify-content: space-evenly; */
+      justify-content: flex-start;
+      /* align-items: flex-end; */
+      /* 交叉轴居中 */
+      /* align-items: space-between; */
+      /* align-content: space-between; */
+    }
+    article>div {
+      border: solid 5px red;
+      box-sizing: border-box;
+      width: 200px;
+      height: 200px;
+      margin: 20px;
+      /* flex-grow: 1; */
+      /* 不收缩 */
+      /* flex-shrink: 1; */
+      flex: 1 1 200px;
+    }
+    article :first-child {
+      /* align-self: center; */
+      /* 在原有基础上增长部占比 */
+      /* 使用剩余空间来进行增长 */
+      /* flex-grow: 2; */
+      flex: 1 2 200px;
+    }
+    article :nth-child(2) {
+      /* align-self: flex-end; */
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </article>
+  </main>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      padding: 400px;
+    }
+    p {
+      /* padding: 30px; */
+      border: solid 3px #ddd;
+      overflow: hidden;
+    }
+    p span {
+      width: 300px;
+      height: 300px;
+      /* margin: 20px; */
+      float: right;
+      /* border: solid 3px red; */
+      background-color: red;
+      /* 圆形 */
+      /* clip-path: circle(50% at 0% 100%); */
+      /* 椭圆 */
+      /* clip-path: ellipse(20% 30%); */
+      /* 多边形 */
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      /* shape-outside: margin-box; */
+      shape-outside: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+  </style>
+</head>
+<body>
+  <p>
+    <span class="shape"></span>
+    22222222222222222222222222222222222222222222222222222111111111111111111111111111111111111111111111111111111111111111111111111111111111
+  </p>
+</body>
+</html>

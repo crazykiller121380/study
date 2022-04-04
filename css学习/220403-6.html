@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 1020px;
+      height: 90px;
+      margin: 0 auto;
+      border: solid 3px blueviolet;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+    }
+    /* 正则匹配col-开头的类名 */
+    [class^="col-"] {
+      background-clip: content-box;
+      padding: 5px;
+      background-color: blueviolet;
+      color: #fff;
+    }
+    /* 只罗列几个 */
+    .col-1 {
+      grid-column-end: span 1;
+    }
+    .col-2 {
+      grid-column-end: span 2;
+    }
+    .col-8 {
+      grid-column-end: span 8;
+    }
+  </style>
+</head>
+<body>
+  <article class="container">
+    <div class="col-2">1</div>
+    <div class="col-8">2</div>
+    <div class="col-2">3</div>
+  </article>
+</body>
+</html>

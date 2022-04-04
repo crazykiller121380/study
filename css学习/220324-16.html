@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    article {
+      width: 500px;
+      height: 500px;
+      border: dashed 10px black;
+      padding: 30px;
+      background-color: pink;
+      /* 裁剪包括边框 */
+      /* background-clip: border-box; */
+      /* 裁剪包括padding */
+      /* background-clip: padding-box; */
+      /* 裁剪包括内容 */
+      background-clip: content-box;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article></article>
+  </main>
+</body>
+</html>

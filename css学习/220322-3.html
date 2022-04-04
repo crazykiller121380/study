@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    article>h2:first-of-type {
+      color: rebeccapurple;
+    }
+    article>h1:only-of-type {
+      color: brown;
+    }
+    ul >li:nth-child(2n) {
+      color: cadetblue;
+    } 
+    /* 排除第一个元素 */
+    main div span:not(:nth-child(1)) {
+      color: aqua;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h2>hdfs</h2>
+      <aside>
+        <h1>uuu</h1>
+        <h2>kkk</h2>
+      </aside>
+      <h1>434</h1>
+    </article>
+    <ul>
+      <li>111</li>
+      <li>222</li>
+      <li>333</li>
+      <li>444</li>
+      <li>555</li>
+      <li>666</li>
+    </ul>
+    <div>
+      <span>222</span>
+      <span>333</span>
+    </div>
+  </main>
+</body>
+</html>

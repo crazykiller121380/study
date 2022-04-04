@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function move(array, from, to) {
+      const newArray = [...array];
+      const item = newArray.splice(from, 1);
+      newArray.splice(to, 0, ...item);
+      return newArray;
+    }
+    const array = [1, 2, 3, 4];
+    console.table(move(array, 0, 3));
+    // function move(array, before, to) {
+    //   if (before < 0 || to >= array.length) {
+    //     console.error("指定位置错误");
+    //     return;
+    //   }
+    //   const newArray = [...array];
+    //   const elem = newArray.splice(before, 1);
+    //   newArray.splice(to, 0, ...elem);
+    //   return newArray;
+    // }
+    // const array = [1, 2, 3, 4];
+    // console.table(move(array, 0, 3));
+
+  </script>
+</body>
+</html>

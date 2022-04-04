@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>yangtianqi</div>
+  <div>feiquan</div>
+  <script>
+    let divs = document.querySelectorAll("div");
+    console.log(
+      Array.from(divs, function(item){
+        item.style.backgroundColor = "red";
+        return item;
+      })
+    );
+  </script>
+</body>
+</html>

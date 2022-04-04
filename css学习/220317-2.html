@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 完全匹配 */
+    h1[title="nmsl"] {
+      color: aquamarine;
+    }
+    /* 以com结尾 */
+    h1[title$="com"] {
+      color: seagreen;
+    }
+    /* 以111开头 */
+    h1[title^="111"] {
+      color: blueviolet;
+    }
+    /* 包含444的全算 不管有没有空格 */
+    h1[shabi*="444"] {
+      color: chocolate;
+    }
+    /* 包含youxi且必须为一个完整单词 */
+    h1[test~="youxi"] {
+      color: chartreuse;
+    }
+    /* 以ytq开始或者后面以-链接的 */
+    h1[ytq|="ytq"] {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1 title="nmsl">yangtianqi</h1>
+      <h1 title="111nmsl">uuuuuuuuu</h1>
+      <h1 title="nmsl.com">ppppppppp</h1>
+      <h1 shabi="111444333">9999999</h1>
+      <h1 shabi="111444555">0000000</h1>
+      <h1 test="youxi 999 8888---">1111</h1>
+      <h1 ytq="ytq-iii">97986</h1>
+    </article>
+  </main>
+</body>
+</html>

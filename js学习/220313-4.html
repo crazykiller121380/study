@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button>baidu.com</button>
+  <button>souhu.cn</button>
+  <script>
+    let ytq = {
+      site: "yangtianqi",
+      show: function() {
+        let btns = document.querySelectorAll("button");
+        let self = this;
+        btns.forEach(function(elem1) {
+          elem1.addEventListener("click", function() {
+            console.log(self.site+this.innerHTML);
+          })
+        });
+      }
+    }
+    ytq.show();
+  </script>
+</body>
+</html>

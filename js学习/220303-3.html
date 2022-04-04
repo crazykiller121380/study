@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="password" name="title">
+  <span></span>
+  <script>
+    let password = document.querySelector("[name='title']");
+    password.addEventListener("keyup", function() {
+      let length = this.value.length;
+      let msg;
+      if (length > 10) {
+        msg = "nmsl";
+      } else if (length > 6) {
+        msg = "666";
+      } else {
+        msg = "nmmd";
+      }
+      document.querySelector("span").innerHTML = msg
+    })
+  </script>
+</body>
+</html>

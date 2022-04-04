@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>houdunren.com</div>
+  <script>
+    let div = document.querySelector("div");
+    [...div.textContent].reduce((pre, cur,index) => {
+      // if (pre == index) div.innerHTML = "";
+      let span = document.createElement("span");
+      span.textContent = cur;
+      div.appendChild(span);
+      span.addEventListener("mouseover", function(){
+        this.classList.add("changeColor");
+      })
+    },0)
+  </script>
+</body>
+</html>

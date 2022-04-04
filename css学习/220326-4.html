@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      display: flex;
+      height: 100vh;
+      /* 竖着来 */
+      flex-direction: column;
+    }
+    main {
+      background-color: #ddd;
+      flex: 1;
+    }
+    footer {
+      background-color: yellow;
+      height: 60px;
+      display: flex;
+      /* 平均分 */
+      justify-content: space-evenly;
+    }
+    footer div {
+      flex: 1;
+      text-align: center;
+      line-height: 3em;
+      color: purple;
+    }
+  </style>
+</head>
+<body>
+  <main>111</main>
+  <footer>
+    <div>CSS</div>
+    <div>HTML</div>
+    <div>JQuery</div>
+  </footer>
+</body>
+</html>

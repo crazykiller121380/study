@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h2 {
+      position: relative;
+      cursor: pointer;
+    }
+    h2:hover::after {
+      /* 获取用户自定义属性 */
+      content: attr(data-title);
+      position: absolute;
+      color: aqua;
+      left: 30px;
+      padding: 10px;
+      top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 自定义属性一般为data-** -->
+  <h2 data-title="www.baidu.com">yangtianqi</h2>
+</body>
+</html>
