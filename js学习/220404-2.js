@@ -21,3 +21,4 @@ user.get = function() {
 // 删除对象属性
 delete user.age;
 console.log(user.get());
+
