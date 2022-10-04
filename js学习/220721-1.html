@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="demo">
+    <div class="box"></div>
+  </div>
+  <div demo="234" id="y4" data-ytq-hobby="sleep" data-yy="eat"></div>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+  </ul>
+  <script>
+    var dom = document.querySelector("#y4");
+    console.log(dom.getAttribute("demo"));
+    console.log(dom.dataset);
+    console.log(dom.dataset["ytqHobby"]);
+
+    var box = document.querySelector('.box');
+    console.log(box.parentNode);
+
+    var ul = document.querySelector("ul");
+    console.log(ul.children);
+  </script>
+</body>
+</html>

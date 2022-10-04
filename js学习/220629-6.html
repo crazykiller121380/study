@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="btn">目前时间</button>
+  <span>隐藏时间</span>
+  <script>
+    var btn = document.getElementById("btn");
+    var span = document.querySelector("span");
+    btn.onclick = function() {
+      span.innerText = getDate();
+    }
+    function getDate() {
+      var date = new Date();
+      var year = date.getFullYear();
+      var month = (date.getMonth() + 1).toString().padStart(2, "0");
+      var day = date.getDay().toString().padStart(2, "0");
+      return year + '-' + month + '-' + day;
+    }
+  </script>
+</body>
+</html>

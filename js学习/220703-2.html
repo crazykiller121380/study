@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    th, td, table {
+      border: solid 1px #000;
+    }
+    th, td {
+      padding: 10px;
+    }
+    .bg {
+      background-color: aqua;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>早上</th>
+        <th>中午</th>
+        <th>晚上</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>红烧肉</td>
+        <td>炖土豆</td>
+        <td>减肥</td>
+      </tr>
+      <tr>
+        <td>红烧肉</td>
+        <td>炖土豆</td>
+        <td>减肥</td>
+      </tr>
+      <tr>
+        <td>红烧肉</td>
+        <td>炖土豆</td>
+        <td>减肥</td>
+      </tr>
+    </tbody>
+  </table>
+  <script>
+    var trs = document.querySelector("tbody").querySelectorAll("tr");
+    for (let i = 0; i < trs.length; i++) {
+      trs[i].onmouseover = function() {
+        this.style.backgroundColor = "pink";
+      }
+      trs[i].onmouseout = function() {
+        this.style.backgroundColor = "";
+      }
+    }
+  </script>
+</body>
+</html>
